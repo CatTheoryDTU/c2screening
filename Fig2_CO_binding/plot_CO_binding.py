@@ -7,8 +7,8 @@ import plot_env
 import matplotlib
 from matplotlib import pyplot as plt
 from scipy.optimize import curve_fit
-from adsorb_functions import *
-from my_analysis_tools.plot_tools import plot_alloy_dictionaries,sort_alloys_for_plot
+sys.path.append(os.getcwd()+f"/../my_analysis_tools/")
+from plot_tools import plot_alloy_dictionaries,sort_alloys_for_plot
 from interesting_alloys import *
 import pickle
 import ase.db

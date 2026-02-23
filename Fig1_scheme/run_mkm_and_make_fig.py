@@ -22,7 +22,7 @@ else:
 setup_file = f"../fig_tools/mkm_file.mkm"
 all_data = json.load(open(f'../data/all_scaling_data_{float(potential):1.2f}V.json','r'))
 all_data['vacuum'] = json.load(open(f'../data/vacuum_binding_results_tm.json','r'))
-mkm_out_pklfile=f'pckl_files/mkm_results_{float(potential):1.2f}V_{facet}.pkl'
+mkm_out_pklfile=f'mkm_results_{float(potential):1.2f}V_{facet}.pkl'
 
 cov_and_rate={'coverage':['CO_'+facet],'production_rate': ['C2H4_g']}
 potentialscale='SHE'
