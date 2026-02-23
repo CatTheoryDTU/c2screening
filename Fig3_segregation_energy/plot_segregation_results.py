@@ -37,9 +37,9 @@ lattices={}
 #     lattices[comp] = row.lattice
 #     break
 
-with open('segregation_results.pckl','rb') as pklin:
+with open('../data/segregation_results.pckl','rb') as pklin:
     data_vac = pickle.load(pklin)
-with open('segregation_with_CO_binding_results.pckl','rb') as pklin:
+with open('../data/segregation_with_CO_binding_results.pckl','rb') as pklin:
     data_with_CO = pickle.load(pklin)
 
 
