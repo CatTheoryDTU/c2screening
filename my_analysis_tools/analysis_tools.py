@@ -6,12 +6,12 @@ import matplotlib
 from matplotlib import pyplot as plt
 from scipy.optimize import curve_fit
 from adsorb_functions import *
-from .plot_tools import *
-from .catmap_tools import *
-from .workfunction_tools import *
+from plot_tools import *
+from catmap_tools import *
+from workfunction_tools import *
 from general_tools import *
-from .stable_adsorbate_parser import *
-from .NEB_parse import *
+from stable_adsorbate_parser import *
+from NEB_parse import *
 #from check_calculations import get_raw_OCCO_energies
 
 e2muC = 1/(C*1e-6)

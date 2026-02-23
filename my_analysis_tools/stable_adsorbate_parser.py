@@ -5,13 +5,13 @@ import numpy as np
 from matplotlib import pyplot as plt
 from scipy.optimize import curve_fit
 from adsorb_functions import *
-from .plot_tools import *
-from .catmap_tools import *
-from .workfunction_tools import *
+from plot_tools import *
+from catmap_tools import *
+from workfunction_tools import *
 from my_analysis_tools.analysis_tools import *
 from general_tools import *
 from ase.units import C
-from .initialize_stuff import *
+from initialize_stuff import *
 #from check_calculations import get_raw_OCCO_energies
 
 

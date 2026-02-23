@@ -2,9 +2,9 @@ import numpy as np
 import os,sys
 from general_tools import get_cellsize,get_reference_energies
 from ase.io import read
-from .workfunction_tools import *
+from workfunction_tools import *
 from ase.units import C
-from  .analysis_tools import *
+from  analysis_tools import *
 
 e2muC = 1/(C*1e-6)
 sizecoeff = 1e-16

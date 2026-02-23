@@ -6,7 +6,7 @@ from matplotlib import pyplot as plt
 from matplotlib import cm
 from scipy.optimize import curve_fit
 from adsorb_functions import *
-from .analysis_tools import *
+from analysis_tools import *
 from general_tools import *
 #from check_calculations import get_raw_OCCO_energies
 

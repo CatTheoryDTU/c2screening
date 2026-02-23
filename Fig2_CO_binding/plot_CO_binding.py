@@ -33,7 +33,7 @@ NM_for_plot = ['Rh','Ir','Ni','Pd','Pt','Ag','Au']
 CO_free_en_shift=0.45
 
 for adsorbate in adsorbates:
-    infile = open(home+'/alloy_results/%s_binding_results.pckl'%adsorbate,'rb')
+    infile = open(r'../data/%s_binding_results.pckl'%adsorbate,'rb')
     data = pickle.load(infile)
     #CHANGE TO THE FOLLOWING IN THE FUTURE
     #import json
