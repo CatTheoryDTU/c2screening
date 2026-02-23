@@ -1,2 +1,1 @@
-# c2screening
-Data repository for ChemCatChem cctc.202501744
+Figure for C2 screening paper. Ideally each directory contains its own README

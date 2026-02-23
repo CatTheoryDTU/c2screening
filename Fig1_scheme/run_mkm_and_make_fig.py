@@ -35,7 +35,6 @@ def main():
         steps=[i for i,label in enumerate(model.output_labels[dattype])
            if label in cov_and_rate[dattype]]
         data,phs,pots=extract_data_from_mkm(model,steps,dattype)
-        run_catmaps_own_analysis(model)
     else:
         data,phs,pots=read_data(mkm_out_pklfile)
         steps=[0]
