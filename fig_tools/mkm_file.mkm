@@ -55,8 +55,8 @@ else:
 
 U_fac_name = f'{voltage:1.2f}V_{facet}'
 
-data_file = os.getcwd()+'/pckl_files/mkm_results_%s.pkl'%U_fac_name
-input_file = os.getcwd()+'/energy_input/catmap_G_input_%s.txt'%U_fac_name
+data_file = os.getcwd()+'/mkm_results_%s.pkl'%U_fac_name
+input_file = os.getcwd()+'/catmap_G_input_%s.txt'%U_fac_name
 surface_names = np.unique([inline.split()[0]
                    for inline in open(input_file,'r').readlines()[1:]
                    if inline.split()[0] not in ['None']])

@@ -89,7 +89,6 @@ def add_alloy_points(ax, all_data, pot_state, free_en_corr, really_interesting_c
         COscadat=all_data['alloys'][pot_state['CO']] #pkl.load(open(COscalinepkl,'rb'))
     scadat=all_data['alloys'][pot_state['OCCO']] #.load(open(scalinepkl,'rb'))
 #    scadat.update(all_data['100'][pot_state['OCCO']])
-    print(scadat['Pd4Sn4'])
     scaling_fit_data=[]
     #colors=cm.nipy_spectral(np.linspace(0,1,len(scadat.keys())))
     colors=cm.nipy_spectral(np.linspace(0,1,len(really_interesting_comps)))
@@ -110,10 +109,6 @@ def add_alloy_points(ax, all_data, pot_state, free_en_corr, really_interesting_c
                 continue
 
             ax.plot([],[],markers[facet],color=colors[iel],markeredgecolor='k',markersize=10,label=f'{get_reduced_alloy_name(elem)}({facet})')
-            if len(scadat[elem][facet].keys()) > 1:
-                print(elem, facet)
-                print(scadat[elem][facet])
-                print(COscadat[elem][facet])
             ## When more than one termination exists, choose which to plot - this is a manual hack
             terminations = ['0']
             if elem+facet in ['In1Pd1100','Pd1Zn1001']:
@@ -123,7 +118,6 @@ def add_alloy_points(ax, all_data, pot_state, free_en_corr, really_interesting_c
             ###
             for termination in terminations:
                 if pot_state['CO'] == 'vacuum':
-                    print(COscadat[elem][facet])
                     if elem+facet in ['Ga1Ni1100']:
                         site = 'Ni'
                         if termination == '0':
@@ -142,7 +136,6 @@ def add_alloy_points(ax, all_data, pot_state, free_en_corr, really_interesting_c
                     codat = COscadat[elem][facet][site] + free_en_corr['CO']
                 else:
                     codat = COscadat[elem][facet][termination]['CO'] + free_en_corr['CO']
-#                print(scadat[elem][facet])
                 occodat = scadat[elem][facet][termination]['OCCO'] + free_en_corr['OCCO']
                 ax.plot(codat,occodat,markers[facet],color=colors[iel],markeredgecolor='k',markersize=14)
                 if elem+facet in ['Ga1Ni1100', 'Ga8Pt4100']:
