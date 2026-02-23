@@ -1,0 +1,15 @@
+ACF.dat
+charge_distribution.out
+EIGENVAL
+ase-sort.dat
+charge_on_atoms.list
+INCAR
+OSZICAR
+vasp.out
+AVF.dat
+CONTCAR
+init.traj
+BCF.dat
+DOSCAR
+KPOINTS
+POSCAR
