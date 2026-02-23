@@ -13,3 +13,7 @@ BCF.dat
 DOSCAR
 KPOINTS
 POSCAR
+vibs
+submit_scriptVASP.sh
+err
+relax.*
