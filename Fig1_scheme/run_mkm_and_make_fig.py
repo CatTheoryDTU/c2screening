@@ -1,7 +1,7 @@
 #! /usr/bin/env python3
 import sys, os
 from catmap import analyze
-from scripts.plot_env import *
+from plot_env import *
 import pickle as pkl
 #from interesting_alloys import really_interesting_comps
 import json
